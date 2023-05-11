@@ -49,7 +49,7 @@ public class MercadoApplication {
 
     public static void configurarPedido(Carrinho carrinho, Configuracao configuracao) {
         ClienteDTO clienteDTO = new ClienteDTO();
-        clienteDTO.setId(1);
+        clienteDTO.setId(80);
         carrinho.setCliente(clienteDTO);
         carrinho.adicionarProdutos(configuracao.gerarPedido());
     }

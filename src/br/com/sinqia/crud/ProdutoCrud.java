@@ -80,18 +80,4 @@ public class ProdutoCrud implements Crud<ProdutoDTO> {
         preparedStatement.setInt(1, id);
         preparedStatement.executeUpdate();
     }
-
-    public List<Integer> listAllIds() throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement(
-                "SELECT Id FROM Produto"
-        );
-
-        ResultSet resultSet = preparedStatement.executeQuery();
-
-        List<Integer> listaInteiros = new ArrayList<>();
-        while(resultSet.next()) {
-            listaInteiros.add(resultSet.getInt("Id"));
-        }
-        return listaInteiros;
-    }
 }

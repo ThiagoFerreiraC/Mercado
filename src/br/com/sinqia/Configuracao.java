@@ -30,8 +30,9 @@ public class Configuracao {
 
     public Set<ItemDoPedido> gerarPedido() {
         return Set.of(
-                new ItemDoPedido(1, 1),
-                new ItemDoPedido(3, 2)
+                new ItemDoPedido(513, 1),
+                new ItemDoPedido(514, 2),
+                new ItemDoPedido(550, 2)
         );
     }
 
